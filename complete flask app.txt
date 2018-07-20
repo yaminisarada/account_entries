@@ -1,0 +1,45 @@
+Complete Flask app
+-------------------------
+1) create a folder in your destination path <accountentries>
+	$md account_entries
+2) Navigate to the created folder
+3) Create python virual environment
+	$python -m venv env
+4) Activate the virtual environment
+	$cd env\Scripts
+	$activate
+Now adding repositories to the Git and local
+--------------------------------------------
+come back to the created folder <accountentries>
+5) Initialize the git
+	$git init
+6) Create and empty file
+	$echo("")>>app.py
+7) Add files to the local repo
+	$git add -A
+8) Commit the files
+	$git commit -m "message what changes made"
+9) open online github account and create new repository that to be linked with the local repo
+10) Copy the URL of online repo and execute below command
+	$git remote add origin https://github.com/<username>/repositoryname
+11) Now link hasbeen created between the online repo and local repo. Now push the files and the changes made in the
+file executing below commands
+	$git push origin master
+12) Create .gitignore file
+13) Create requirements.txt file which will save all the packages installed with pip.This is meant to be used by other 
+developers to recreate the same development environment. For this execute
+	$ pip freeze > requirements.txt
+14) Every project should contain virtual environment, Gitrepo and .gitignore file
+ 
+
+-Now go to the online github repository and refresh the page and see your files will be on the repository
+-Now if you want to leave and do the changes to the project latter go to Scripts folder and deactivate environment
+	$cd env\Scripts
+	$deactivate
+****Now if you want to start the project again activate the environment*****
+
+15) make the changes in the files and then again follow the steps
+	$ git add -A
+	$ git commit -am 'message'
+	$ git push origin master
+13) 
